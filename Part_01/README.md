@@ -2,4 +2,5 @@
 ---
 
 1. 开发环境配置
-2. 
+2. tensorflow 基础知识
+3. tensorflow lite 简单尝试

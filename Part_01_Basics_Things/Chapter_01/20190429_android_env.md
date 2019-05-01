@@ -1,7 +1,3 @@
-# ubuntu 18.04 截图工具
-
-	sudo apt install flameshot
-	
 # Android SDK 环境配置
 
 [site](https://developer.android.com/studio)

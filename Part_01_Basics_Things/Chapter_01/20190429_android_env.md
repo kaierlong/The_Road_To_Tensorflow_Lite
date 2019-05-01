@@ -5,8 +5,8 @@
  	wget -c "https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip"
 
 
-![](/home/kaierlong/Notes/20190429_android_sdk_00.png) 
+![](./images/20190429_android_sdk_00.png) 
 
-![](/home/kaierlong/Notes/20190429_android_sdk_01.png) 
+![](./images/20190429_android_sdk_01.png) 
 
-![](/home/kaierlong/Notes/20190429_android_sdk_02.png) 
+![](./images/20190429_android_sdk_02.png) 

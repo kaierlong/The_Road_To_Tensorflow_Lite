@@ -10,7 +10,7 @@
 ## 2. cudnn安装
 进入[cudnn主页](https://developer.nvidia.com/cudnn)，点击右上角的Join进行账号注册，注册完成登录。登录界面如下图所示。
 
- <div align="center">![](images/20190503_cudnn_00.png)图2</div>
+ <center>![](images/20190503_cudnn_00.png)图2</center>
 
 登录完成之后选择 Download cuDNN。如下图所示
 

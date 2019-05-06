@@ -10,18 +10,18 @@
 ## 2. cudnn安装
 进入[cudnn主页](https://developer.nvidia.com/cudnn)，点击右上角的Join进行账号注册，注册完成登录。登录界面如下图所示。
 
- <center>![](images/20190503_cudnn_00.png)图2</center>
+<div align=center><img src="images/20190503_cudnn_00.png"/>图2</div>
 
 登录完成之后选择 Download cuDNN。如下图所示
 
- <div align="center">![](images/20190503_cudnn_01.png)图3</div>
+<div align=center><img src="images/20190503_cudnn_01.png"/>图3</div>
 
- <div align="center">![](images/20190503_cudnn_02.png)图4</div>
+<div align=center><img src="images/20190503_cudnn_02.png"/>图4</div>
 
- <div align="center">![](images/20190503_cudnn_03.png)图5</div>
+<div align=center><img src="images/20190503_cudnn_03.png"/>图5</div>
 
- <div align="center">![](images/20190503_cudnn_04.png)图6</div>
+<div align=center><img src="images/20190503_cudnn_04.png"/>图6</div>
 
- <div align="center">![](images/20190503_cudnn_05.png)图7</div>
+<div align=center><img src="images/20190503_cudnn_05.png"/>图7</div>
 
 ## 3. tensorflow 2.0 v2.0.0-alpha0 安装

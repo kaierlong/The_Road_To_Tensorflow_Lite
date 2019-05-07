@@ -8,12 +8,11 @@
 ![图1](images/20190503_cuda_00.png)<center>图1</center>
 
 ## 2. cudnn安装
-进入[cudnn主页](https://developer.nvidia.com/cudnn)，点击右上角的Join进行账号注册，注册完成登录。登录界面如下图所示。
+- 进入[cudnn主页](https://developer.nvidia.com/cudnn)，点击右上角的Join进行账号注册，注册完成登录。登录界面如图2所示。
+- 登录完成之后选择 Download cuDNN，如图3所示
+- 下载cuDNN v7.3.0 Library for Linux，如图4~图7所示
 
 ![图2](images/20190503_cudnn_00.png)<center>图2</center>
-
-登录完成之后选择 Download cuDNN。如下图所示
-
 ![图3](images/20190503_cudnn_01.png)<center>图3</center>
 ![图4](images/20190503_cudnn_02.png)<center>图4</center>
 ![图5](images/20190503_cudnn_03.png)<center>图5</center>

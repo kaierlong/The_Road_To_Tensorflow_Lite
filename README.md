@@ -4,6 +4,8 @@
 > 2. 手机端深度学习实践
 > 3. Tensorflow Lite 开发实践
 
+**持续更新中......**
+
 ## 目录
 第一篇 概念入门篇
 
@@ -31,3 +33,8 @@
 
 第四篇 高级特性篇
 > GPU and gemmlop
+
+## 联系方式
+欢迎添加QQ群 **981295310 -- Tensorflow Lite Developers**
+
+![](qq_group.png)

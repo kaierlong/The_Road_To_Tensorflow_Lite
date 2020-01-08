@@ -11,9 +11,12 @@
 ## 目录
 第一篇 概念入门篇
 
-1. tensorflow 介绍
-2. tensorflow lite 介绍
-3. 模型转换
+1. 第一章 TensorFlow Lite初探
+
+    1. tensorflow lite 介绍
+    2. tensorflow lite 开发环境配置
+    3. 编译性能测试工具
+    4. TFlite模型可视化
 
 第二篇 应用实践篇 examples and tools
 

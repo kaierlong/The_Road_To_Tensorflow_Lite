@@ -66,5 +66,24 @@
 	"sources;android-26" "sources;android-28" "tools"
 
 ## 2. 配置Android NDK
+> 注意：本文默认配置在用户主目录下的android/ndk/
+
+#### 1. 下载`android-ndk-r18b-linux-x86_64.zip`
+进入[Android NDK](https://developer.android.com/ndk)官网，下载`android-ndk-r18b-linux-x86_64.zip`，依次如下图所示。
+
+![图1](./images/2020_01_03_android_ndk_01.png)
+![图2](./images/2020_01_03_android_ndk_02.png)
+![图3](./images/2020_01_03_android_ndk_03.png)
+![图4](./images/2020_01_03_android_ndk_04.png)
+
+**也可以通过如下命令下载**
+
+	wget -c "https://dl.google.com/android/repository/android-ndk-r18b-linux-x86_64.zip?hl=zh_cn"
+	mv "android-ndk-r18b-linux-x86_64.zip?hl=zh_cn" android-ndk-r18b-linux-x86_64.zip
+
+#### 2. 解压
+
+	cp ${download_dir}/android-ndk-r18b-linux-x86_64.zip ${home_dir}/android/sdk/
+	unzip -x android-ndk-r18b-linux-x86_64.zip
 
 ## 3. 配置bazel

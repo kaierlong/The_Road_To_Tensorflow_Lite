@@ -87,3 +87,25 @@
 	unzip -x android-ndk-r18b-linux-x86_64.zip
 
 ## 3. 配置bazel
+> 默认安装在用户目录，即采用--user, 也可以不添加该参数root安装。
+
+#### 1. 下载
+	
+	wget -c "https://github.com/bazelbuild/bazel/releases/download/0.26.1/bazel-0.26.1-installer-linux-x86_64.sh"
+
+#### 2. 安装
+
+	chmod a+x bazel-0.26.1-installer-linux-x86_64.sh
+	./bazel-0.26.1-installer-linux-x86_64.sh --user
+	
+#### 3. 查看是否安装成功
+
+	bazel version
+
+**显示如下内容，安装成功**
+
+	Build label: 0.26.1
+	Build target: bazel-out/k8-opt/bin/src/main/java/com/google/devtools/build/lib/bazel/BazelServer_deploy.jar
+	Build time: Thu Jun 6 11:05:05 2019 (1559819105)
+	Build timestamp: 1559819105
+	Build timestamp as int: 1559819105

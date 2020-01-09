@@ -73,4 +73,8 @@
 
 在浏览器中打开`model.html`，可以看到模型的版本、输入输出、Tensors、Ops、图结构、Buffers以及所用到的op算子。
 
-![](./images/2020_01_09_visualize.png)
+![](./images/2020_01_09_visualize_01.png)
+![](./images/2020_01_09_visualize_02.png)
+![](./images/2020_01_09_visualize_03.png)
+![](./images/2020_01_09_visualize_04.png)
+![](./images/2020_01_09_visualize_05.png)

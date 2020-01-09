@@ -7,15 +7,19 @@
 **持续更新中......**
 
 ## 目录
-第一篇 概念入门篇
 
-1. 第一章 TensorFlow Lite初探
+[前言](./preface.md)
 
-    1. tensorflow lite 介绍
-    2. tensorflow lite 开发环境配置
-    3. 性能测试工具
-    4. tflite模型可视化
- 
+[第一篇 概念入门篇](./Part_01_Basics_Things/README.md)
+
+1. [第一章 TensorFlow Lite 初探]()
+
+    - [第一节 Tensorflow Lite 介绍](./Part_01_Basics_Things/Chapter_01_First_Look_at_Tensorflow_Lite/00_tflite_intro.md)
+    - [第二节 Tensorflow Lite 开发环境配置](./Part_01_Basics_Things/Chapter_01_First_Look_at_Tensorflow_Lite/02_tensorflow_lite_env.md)
+    - [第三节 Tensorflow Lite 性能测试工具](./Part_01_Basics_Things/Chapter_01_First_Look_at_Tensorflow_Lite/03_tflite_benchmark.md)
+    - [第四节 Tensorflow Lite 模型可视化工具](./Part_01_Basics_Things/Chapter_01_First_Look_at_Tensorflow_Lite/04_tflite_visualize.md) 
+    - [第五节 Tensorflow Lite 模型转换工具](./Part_01_Basics_Things/Chapter_01_First_Look_at_Tensorflow_Lite/05_tflite_converter.md)
+
 2. 第二章 TensorFlow入门
 
 	1. 安装tensorflow

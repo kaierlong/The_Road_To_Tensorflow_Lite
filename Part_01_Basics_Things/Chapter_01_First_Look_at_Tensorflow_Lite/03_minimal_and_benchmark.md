@@ -41,6 +41,8 @@
 
 ## 3. benchmark
 
+#### 1. 不同平台编译
+
 **桌面平台**
 
 	bazel build -c opt tensorflow/lite/tools/benchmark:benchmark_model
@@ -52,36 +54,29 @@
 **arm_v8平台**
 
 	bazel build -c opt --config=android_arm64 --cxxopt='--std=c++11' tensorflow/lite/tools/benchmark:benchmark_model --verbose_failures
-
-	benchmark_model --graph=model.tflite --num_runs=100 --num_threads=1 --input_layer=inputs,states --input_layer_shape=1,64:1,2464
 	
-	benchmark_model --graph=quan_model.tflite --num_runs=100 --num_threads=1 --input_layer=inputs,states,nlm/rnn_cells/kernel_ids_00,nlm/rnn_cells/kernel_ids_01 --input_layer_shape=1,64:1,2464:864,3200:864,3200
+**编译结果文件为`bazel-bin/tensorflow/lite/tools/benchmark/benchmark_model`**
 
-	benchmark_model --graph=model.tflite --num_runs=100 --num_threads=1 --input_layer=inputs,nlm/rnn_cells/rnn_cells/multi_rnn_cell/cell_1/lstm_cell_01/MatMul_1 --input_layer_shape=1,64:1,2464 --use_nnapi=true
+#### 2. 测试`mobilenet_v1`
+
+**下载`mobilenet_v1`，解压**
+
+	wget -c "https://storage.googleapis.com/download.tensorflow.org/models/tflite/mobilenet_v1_224_android_quant_2017_11_08.zip"
+	unzip -x mobilenet_v1_224_android_quant_2017_11_08.zip
 	
-====== tflite
+解压得到`labels.txt`和`mobilenet_quant_v1_224.tflite`，其中`mobilenet_quant_v1_224.tflite`是我们本次需要的。
 
-Initialized session in 0.896ms
-Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
-count=215 first=12231 curr=2106 min=2065 max=12231 avg=2331.42 std=746
+**传输所需文件到手机**
 
-Running benchmark for at least 100 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
-count=459 first=2143 curr=2101 min=2056 max=2656 avg=2177.1 std=124
+	adb push bazel-bin/tensorflow/lite/tools/benchmark/benchmark_model /data/local/tmp
+	adb mobilenet_quant_v1_224.tflite /data/local/tmp
+	
+**手机端测试**
 
-Average inference timings in us: Warmup: 2331.42, Init: 896, no stats: 2177.1
+	adb shell chmod +x /data/local/tmp/benchmark_model
+	
+	adb shell /data/local/tmp/benchmark_model \
+	--graph=/data/local/tmp/mobilenet_quant_v1_224.tflite \
+	--num_threads=4
 
-====== dynamic float
-
-Initialized session in 3.33ms
-Running benchmark for at least 1 iterations and at least 0.5 seconds but terminate if exceeding 150 seconds.
-count=5 first=118829 curr=105453 min=102652 max=118829 avg=107354 std=5819
-
-Running benchmark for at least 100 iterations and at least 1 seconds but terminate if exceeding 150 seconds.
-count=100 first=102919 curr=102428 min=101417 max=109982 avg=104036 std=1565
-
-Average inference timings in us: Warmup: 107354, Init: 3330, no stats: 104036
-
-# 构建toco
-bazel build tensorflow/lite/toco:toco
-bazel-bin/tensorflow/lite/toco/toco
 

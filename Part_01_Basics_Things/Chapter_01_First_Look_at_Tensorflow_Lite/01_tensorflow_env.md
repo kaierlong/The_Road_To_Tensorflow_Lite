@@ -12,45 +12,50 @@
 ## 1. CUDA安装
 **第一步：下载CUDA 10.0**
 
-访问[**下载地址**](https://developer.nvidia.com/cuda-10.0-download-archive)。依次选择，**Linux -> x86_64 -> Ubuntu -> 18.04 -> runfile(loacal)**，然后点击**Download**。如下图1-1所示：
+**访问[下载地址](https://developer.nvidia.com/cuda-10.0-download-archive)。依次选择，`Linux -> x86_64 -> Ubuntu -> 18.04 -> runfile(loacal)`，然后点击`Download`。如图1-1所示：**
 
-![图1](images/2020_01_12_cuda_01.png)
-<p align="center">图1-1</p>
+![](images/2020_01_12_cuda_01.png)
+<p align="center">图1-1 下载界面</p>
 
 **第二步：安装CUDA**
 
-同时按住`CTRL + ALT + F1`, 登录root账户。
-
-关闭`lightdm`，使用如下命令查看`lightdm`状态及关闭`lightdm`。
+**同时按住`CTRL + ALT + F1`, 登录root账户。关闭`lightdm`，使用如下命令查看`lightdm`状态及关闭`lightdm`，结果见图1-2、图1-3。**
 
 	sudo service lightdm status
 	sudo service lightdm stop
 
-见图1-2，图1-3所示。
-
 ![](images/2020_01_12_cuda_02.png)
-<p align="center">图1-2</p>
+<p align="center">图1-2 lightdm运行状态</p>
 
 ![](images/2020_01_12_cuda_03.png)
-<p align="center">图1-3</p>
+<p align="center">图1-3 lightdm终止状态</p>
 	
-安装
+**安装`cuda_10.0.130_410.48_linux`，过程见图1-4到图1-6。**
 	
 	sudo ./cuda_10.0.130_410.48_linux
 
-见图1-4到图1-6。
-
 ![](images/2020_01_12_cuda_04.png)
-<p align="center">图1-4</p>
+<p align="center">图1-4 加载界面</p>
 
 ![](images/2020_01_12_cuda_05.png)
-<p align="center">图1-5</p>
+<p align="center">图1-5 安装细节</p>
 
 ![](images/2020_01_12_cuda_06.png)
-<p align="center">图1-6</p>
+<p align="center">图1-6 安装完成</p>
 
 **第三步：系统环境配置**
 
+**打开`.bashrc`，增加如下内容。**
+
+	vim .bashrc
+	# 增加内容部分
+	export PATH="/usr/local/cuda-10.0/bin:$PATH"
+	export LD_LIBRARY_PATH="/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH"
+	
+**如果需要当时生效，运行如下命令。否则下次登录自动生效。**
+
+	source ~/.bashrc
+	
 ## 2. cuDNN安装
 
 **第一步：下载cuDNN**

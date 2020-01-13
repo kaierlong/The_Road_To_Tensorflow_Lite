@@ -62,14 +62,19 @@
 
 ![图2](images/2019_05_03_cudnn_01.png)
 <p align="center">图2-1 登录界面</p>
+
 ![图3](images/2019_05_03_cudnn_02.png)
 <p align="center">图2-2 下载界面</p>
+
 ![图4](images/2019_05_03_cudnn_03.png)
 <p align="center">图2-3 同意条款</p>
+
 ![图5](images/2020_01_13_cudnn_04.png)
 <p align="center">图2-4 存档版本</p>
+
 ![图6](images/2020_01_13_cudnn_05.png)
 <p align="center">图2-5 确认版本</p>
+
 ![图7](images/2020_01_13_cudnn_06.png)
 <p align="center">图2-6 确认平台</p>
 

@@ -1,4 +1,4 @@
-# Tensorflow安装
+# Tensorflow 2.0 环境配置及安装
 ---
 > 本节系统环境 Xubuntu 18.04
 
@@ -94,13 +94,14 @@
 	cd /usr/local/cuda-10.0/lib64/
 	sudo ln -s libcudnn.so.7.6.0 libcudnn.so.7
 	sudo ln -s libcudnn.so.7 libcudnn.so
-	
-**确认cuDNN已安装**
+
 ![](images/2019_05_12_cudnn_07.png)
 <p align="center">图2-7 安装前include文件夹</p>
 
 ![](images/2019_05_12_cudnn_08.png)
 <p align="center">图2-8 安装前lib64文件夹</p>
+
+**确认cuDNN已安装**
 
 ![](images/2020_01_13_cudnn_09.png)
 <p align="center">图2-9 安装后include文件夹</p>

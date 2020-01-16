@@ -16,7 +16,6 @@
 
 ![](images/2020_01_12_cuda_01.png)
 <p align="center">图1-1 下载界面</p>
-
 **第二步：安装CUDA**
 
 **同时按住`CTRL + ALT + F1`, 登录root账户。关闭`lightdm`，使用如下命令查看`lightdm`状态及关闭`lightdm`，结果见图1-2、图1-3。**
@@ -26,23 +25,19 @@
 
 ![](images/2020_01_12_cuda_02.png)
 <p align="center">图1-2 lightdm运行状态</p>
-
 ![](images/2020_01_12_cuda_03.png)
 <p align="center">图1-3 lightdm终止状态</p>
-	
+
 **安装`cuda_10.0.130_410.48_linux`，过程见图1-4到图1-6。**
 	
 	sudo ./cuda_10.0.130_410.48_linux
 
 ![](images/2020_01_12_cuda_04.png)
 <p align="center">图1-4 加载界面</p>
-
 ![](images/2020_01_12_cuda_05.png)
 <p align="center">图1-5 安装细节</p>
-
 ![](images/2020_01_12_cuda_06.png)
 <p align="center">图1-6 安装完成</p>
-
 **第三步：系统环境配置**
 
 **打开`.bashrc`，增加如下内容。**
@@ -51,11 +46,11 @@
 	# 增加内容部分
 	export PATH="/usr/local/cuda-10.0/bin:$PATH"
 	export LD_LIBRARY_PATH="/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH"
-	
+
 **如果需要当时生效，运行如下命令。否则下次登录自动生效。**
 
 	source ~/.bashrc
-	
+
 ## 2. cuDNN安装
 
 **第一步：下载cuDNN**
@@ -67,22 +62,16 @@
 
 ![图2](images/2019_05_03_cudnn_01.png)
 <p align="center">图2-1 登录界面</p>
-
 ![图3](images/2019_05_03_cudnn_02.png)
 <p align="center">图2-2 下载界面</p>
-
 ![图4](images/2019_05_03_cudnn_03.png)
 <p align="center">图2-3 同意条款</p>
-
 ![图5](images/2020_01_13_cudnn_04.png)
 <p align="center">图2-4 存档版本</p>
-
 ![图6](images/2020_01_13_cudnn_05.png)
 <p align="center">图2-5 确认版本</p>
-
 ![图7](images/2020_01_13_cudnn_06.png)
 <p align="center">图2-6 确认平台</p>
-
 **第二步：安装cuDNN**
 > 本次cuda安装位置为**`/usr/local/cuda-10.0`**
 
@@ -97,32 +86,27 @@
 
 ![](images/2019_05_12_cudnn_07.png)
 <p align="center">图2-7 安装前include文件夹</p>
-
 ![](images/2019_05_12_cudnn_08.png)
 <p align="center">图2-8 安装前lib64文件夹</p>
-
 **确认cuDNN已安装**
 
 ![](images/2020_01_13_cudnn_09.png)
 <p align="center">图2-9 安装后include文件夹</p>
-
 ![](images/2020_01_13_cudnn_10.png)
 <p align="center">图2-10 安装后lib64文件夹</p>
-
 
 ## 3. Tensorflow 2.0 安装
 **安装Tensorflow 2.0**
 
 	sudo pip3 install tensorflow==2.0.0
 	sudo pip3 install tensorflow-gpu=2.0.0
-	
+
 **测试是否安装成功**
 
 	python3
-	
+
 **显示如下内容：**
 
 ![](images/2020_01_13_tensorflow_01.png)
 <p align="center">图3-1 安装成功</p>
-
 **安装成功！**

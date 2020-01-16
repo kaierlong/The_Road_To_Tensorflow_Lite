@@ -7,19 +7,16 @@
 **参考**
 > - [使用sdkmanager命令行工具安装Android SDK](https://majing.io/posts/10000004651173)
 
-#### 1. 进入官网，下载sdk-tools-linux
+#### 1. 下载`sdk-tools-linux`
 
 进入[Android](https://developer.android.com/studio)官网-- 如图1，定位到`Command line tools only` -- 如图2，下载`sdk-tools-linux-4333796.zip` -- 需要先同意，如图3。
 
 ![图1](./images/20190429_android_sdk_00.png)
 <center>图1 -- Android官网</center>
-
 ![图2](./images/20190429_android_sdk_01.png)
 <center>图2 -- sdk-tools-linux</center>
-
 ![图3](./images/20190429_android_sdk_02.png)
 <center>图3 -- 同意条款</center>
-
 ***也可以使用如下命令***
 
 	wget -c "https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip"
@@ -90,14 +87,14 @@
 > 默认安装在用户目录，即采用--user, 也可以不添加该参数root安装。
 
 #### 1. 下载
-	
+
 	wget -c "https://github.com/bazelbuild/bazel/releases/download/0.26.1/bazel-0.26.1-installer-linux-x86_64.sh"
 
 #### 2. 安装
 
 	chmod a+x bazel-0.26.1-installer-linux-x86_64.sh
 	./bazel-0.26.1-installer-linux-x86_64.sh --user
-	
+
 #### 3. 查看是否安装成功
 
 	bazel version
